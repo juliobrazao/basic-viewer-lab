@@ -1,8 +1,9 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap';
 import ReactDOM from 'react-dom/client';
-import App from './App';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { RouterProvider } from 'react-router';
+import { router } from './router';
 
 const queryClient = new QueryClient();
 
@@ -12,6 +13,6 @@ const root = ReactDOM.createRoot(
 
 root.render(
   <QueryClientProvider client={queryClient}>
-    <App />
+    <RouterProvider router={router} />
   </QueryClientProvider>
 );
