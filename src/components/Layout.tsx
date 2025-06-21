@@ -19,7 +19,9 @@ export default function Layout() {
   return (
     <>
       <Header title={title} menuItems={menuItems} />
-      <Outlet />
+      <div className="container-fluid mt-3">
+        <Outlet />
+      </div>
     </>
   );
 }
