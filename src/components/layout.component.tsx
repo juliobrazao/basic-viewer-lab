@@ -1,5 +1,6 @@
 import { Outlet } from 'react-router';
-import Header, { MenuItem } from './Header';
+import Header from './header.component';
+import { MenuItem } from '@/models/menu-item.model';
 
 export default function Layout() {
   const title = 'Project Zero';

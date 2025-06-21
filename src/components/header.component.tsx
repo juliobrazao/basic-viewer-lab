@@ -1,8 +1,4 @@
-export type MenuItem = {
-  title: string;
-  url: string;
-  isActive: boolean;
-};
+import { MenuItem } from '@/models/menu-item.model';
 
 interface HeaderProps {
   title: string;
